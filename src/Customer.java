@@ -8,15 +8,19 @@
  * @author ageward
  */
 public class Customer extends Thread {
-    private SushiBar sushibar;
-        private int id;
+    public int id;
+    private int nofOrders;
         
-        public Customer(int id){
-            this.id = id;
-            this.sushibar = sushibar;
+
+    public Customer(int id){
+        this.id = id;
+        this.nofOrders = (int)(Math.random()*10); 
+    }
+        
+    public void run(){
+        for ( int i = 0 ; i < nofOrders; i++){
+                
         }
         
-        public void run(){
-            
-        }
+    }
 }
