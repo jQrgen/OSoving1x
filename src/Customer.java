@@ -8,7 +8,7 @@
  * @author ageward
  */
 public class Customer extends Thread {
-    private int id;
+    public int id;
     private int nofOrders;
         
     public Customer(int id){
@@ -20,5 +20,6 @@ public class Customer extends Thread {
         for ( int i = 0 ; i < nofOrders; i++){
                 
         }
+        
     }
 }
