@@ -22,11 +22,8 @@ public class SushiBar {
         
 	public static void main(String[] args) {
 		log= new File(path + "log.txt"); 
-		
-		//To be completed
-
-
-
+                
+                Door door = new Door();
 
 	}
 

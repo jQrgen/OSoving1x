@@ -1,0 +1,39 @@
+import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Timer;
+import java.util.TimerTask;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author jorgen
+ */
+public class Door {
+    public int newID;
+    LinkedList queue = new LinkedList();
+    public static boolean open = true;
+    Timer timer;
+    
+    public Door(){
+        newID = 0;
+        timer = new Timer();
+        timer.schedule(new newCustomer(),SushiBar.doorWait);
+    }
+    
+    class newCustomer extends TimerTask {
+           public void run() {
+               if(!open){
+                   System.out.println("Shop is closed");
+                   timer.cancel();
+               }else{ 
+               queue.add(new Customer(newID));
+               newID++;
+               timer.schedule(new newCustomer(),SushiBar.doorWait);  
+               }
+           }
+    }
+}

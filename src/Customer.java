@@ -11,7 +11,7 @@ public class Customer extends Thread {
     private SushiBar sushibar;
         private int id;
         
-        public Customer(int id, SushiBar sushibar){
+        public Customer(int id){
             this.id = id;
             this.sushibar = sushibar;
         }
