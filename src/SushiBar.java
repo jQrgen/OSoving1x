@@ -15,7 +15,10 @@ public class SushiBar {
 
 
 	public static boolean isOpen=true;
-
+        
+        
+        Clock clock = new Clock(duration);
+        
 	//Creating the log file
 	private static File log;
 	private static String path = "./";
