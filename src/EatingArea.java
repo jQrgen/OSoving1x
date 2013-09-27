@@ -27,14 +27,17 @@ public class EatingArea {
                         Logger.getLogger(EatingArea.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
-            seats.add(door.GetCustomerInFrontOfTheLine());
+            seats.add(door.getCustomerInFrontOfTheLine());
             }
         }
     }
     
-    public void CostumerLeft(Customer customer) {
+    public void costumerLeft(Customer customer) {
         synchronized(lock){
+                    SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
+                    " has finished eating.");
             seats.remove(customer);
+            lock.notify();
         }
     }
     
