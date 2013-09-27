@@ -37,12 +37,12 @@ public class Customer implements Runnable {
                     e.printStackTrace();
                 }
             }
-        }else{
-            
-            sa.customerEnteringTheServingArea(this);
+        } else {
+            if (SushiBar.isOpen) {
+                sa.customerEnteringTheServingArea(this);
+            }
         }
         if (SushiBar.isOpen) {
-
             try {
                 SushiBar.write(Thread.currentThread().getName()
                         + ":\tCustomer " + this.id + " is eating sushi.");
