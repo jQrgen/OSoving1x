@@ -31,6 +31,11 @@ public class ServingArea {
             SushiBar.write("Now there is a free seat in the shop.");
         }
         eatingCustomers.remove(customer);
+        SushiBar.write(Thread.currentThread().getName()
+                        + ":\tCustomer " + customer.getId() + " has left the shop.");
+        if (eatingCustomers.size()==0 && SushiBar.isOpen){
+            SushiBar.write("***** NO MORE CUSTOMERS - THE SHOP IS CLOSED NOW. *****");
+        }
         if (SushiBar.isOpen) {
             notify();
         }
