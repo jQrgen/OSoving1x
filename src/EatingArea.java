@@ -25,7 +25,7 @@ public class EatingArea {
                         Logger.getLogger(EatingArea.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
-            seats.add(door.getCustomerInFrontOfTheLine());
+            seats.add(queue.removeFirst());
             }
         }
     }
