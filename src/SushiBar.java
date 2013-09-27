@@ -24,7 +24,9 @@ public class SushiBar {
 	private static String path = "./";
         
 	public static void main(String[] args) {
-		
+		log= new File(path + "log.txt"); 
+                
+                Door door = new Door();
 
 	}
         
