@@ -29,7 +29,9 @@ public class SushiBar {
 	private static String path = "./";
         
 	public static void main(String[] args) {
+
 		log= new File(path + "log.txt"); 
+
 		
 		ServingArea sa = new ServingArea(capacity);
                 Thread door = new Thread(new Door(sa));
@@ -37,7 +39,8 @@ public class SushiBar {
                 door.start();
 	}
 
-	
+        
+
 	//Writes actions in the log file and console
 	public static void write(String str){
 		try {

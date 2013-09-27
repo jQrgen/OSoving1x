@@ -1,15 +1,17 @@
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package asd;
 
-import sun.font.EAttribute;
+
+
 
 /**
  *
  * @author ageward
  */
+
 public class Customer implements Runnable {
 
     private int id;
@@ -50,8 +52,8 @@ public class Customer implements Runnable {
         }
         sa.customerLeavingTheServingArea(this);
     }
-
-    public int getId() {
-        return id;
-    } 
+    public int getId(){
+        return this.id;
+    }
 }
+
