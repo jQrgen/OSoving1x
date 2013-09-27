@@ -25,9 +25,15 @@ public class EatingArea {
                         Logger.getLogger(EatingArea.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
+            }
             SushiBar.write(Thread.currentThread().getName()+": Customer "+queue.getFirst().id+ 
                     " has a seat now.");
-            seats.add(queue.removeFirst());
+            
+            if(!SushiBar.isOpen){
+                break;
+            }else{
+                seats.add(queue.removeFirst());
+
             }
         }
     }
