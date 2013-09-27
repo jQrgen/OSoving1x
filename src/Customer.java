@@ -52,8 +52,8 @@ public class Customer implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            sa.customerLeavingTheServingArea(this);
         }
+            sa.customerLeavingTheServingArea(this);
     }
 
     public int getId() {
