@@ -3,15 +3,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
-
-
 /**
  *
  * @author ageward
  */
-
 public class Customer implements Runnable {
 
     private int id;
@@ -32,34 +27,34 @@ public class Customer implements Runnable {
             synchronized (sa) {
                 try {
                     SushiBar.write(Thread.currentThread().getName()
-                        + ":\tCustomer " + this.id + " is waiting for a free seat.");
+                            + ":\tCustomer " + this.id + " is waiting for a free seat.");
                     sa.wait();
-                    if (SushiBar.isOpen){
+                    if (SushiBar.isOpen) {
                         sa.customerEnteringTheServingArea(this);
                     }
-                    
+
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
         }
-        if(SushiBar.isOpen){
-        sa.customerEnteringTheServingArea(this);
-        
-        try {
-            SushiBar.write(Thread.currentThread().getName()
-                + ":\tCustomer " + this.id + " is eating sushi.");
-            Thread.sleep(SushiBar.customerWait * orders);
-            SushiBar.write(Thread.currentThread().getName()
-                + ":\tCustomer " + this.id + " is done eating sushi.");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        sa.customerLeavingTheServingArea(this);
+        if (SushiBar.isOpen) {
+            sa.customerEnteringTheServingArea(this);
+
+            try {
+                SushiBar.write(Thread.currentThread().getName()
+                        + ":\tCustomer " + this.id + " is eating sushi.");
+                Thread.sleep(SushiBar.customerWait * orders);
+                SushiBar.write(Thread.currentThread().getName()
+                        + ":\tCustomer " + this.id + " is done eating sushi.");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            sa.customerLeavingTheServingArea(this);
         }
     }
-    public int getId(){
+
+    public int getId() {
         return this.id;
     }
 }
-
