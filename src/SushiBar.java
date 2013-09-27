@@ -26,7 +26,7 @@ public class SushiBar {
 	public static void main(String[] args) {
 		log= new File(path + "log.txt"); 
                 
-                Door door = new Door();
+                EatingArea ea = new EatingArea(door);
 
 	}
         
