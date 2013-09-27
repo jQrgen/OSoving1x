@@ -25,10 +25,11 @@ public class EatingArea {
                         Logger.getLogger(EatingArea.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
-            seats.add(queue.removeFirst());
             }
             if(!SushiBar.isOpen){
                 break;
+            }else{
+                seats.add(queue.removeFirst());
             }
         }
     }
