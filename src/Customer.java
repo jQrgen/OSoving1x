@@ -53,7 +53,7 @@ public class Customer implements Runnable {
                 e.printStackTrace();
             }
         }
-        sa.customerLeavingTheServingArea(this);
+            sa.customerLeavingTheServingArea(this);
     }
 
     public int getId() {

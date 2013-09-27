@@ -18,7 +18,7 @@ public class SushiBar {
 	private static int capacity =10; //capacity of Sushi Bar
 	private static int duration = 3; // Simulation time
 	public static int maxOrder = 10; // Maximum number of orders for each customer
-	public static int customerWait= 3000; // coefficient of eating time for customers
+	public static int customerWait= 500; // coefficient of eating time for customers
 	public static int doorWait = 100; // coefficient of waiting time for door for creating next customer
 
 
