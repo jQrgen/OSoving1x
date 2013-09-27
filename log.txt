@@ -1,0 +1,251 @@
+15:39:07, Thread-2:	Customer 0 is now created.
+15:39:07, Thread-2:	Customer 0 has a seat now.
+15:39:07, Thread-2:	Customer 0 is eating sushi.
+15:39:07, Thread-3:	Customer 1 is now created.
+15:39:07, Thread-3:	Customer 1 has a seat now.
+15:39:07, Thread-3:	Customer 1 is eating sushi.
+15:39:07, Thread-3:	Customer 1 is done eating sushi.
+15:39:07, Thread-4:	Customer 2 is now created.
+15:39:07, Thread-4:	Customer 2 has a seat now.
+15:39:07, Thread-4:	Customer 2 is eating sushi.
+15:39:07, Thread-5:	Customer 3 is now created.
+15:39:07, Thread-5:	Customer 3 has a seat now.
+15:39:07, Thread-5:	Customer 3 is eating sushi.
+15:39:07, Thread-6:	Customer 4 is now created.
+15:39:07, Thread-6:	Customer 4 has a seat now.
+15:39:07, Thread-6:	Customer 4 is eating sushi.
+15:39:08, Thread-7:	Customer 5 is now created.
+15:39:08, Thread-7:	Customer 5 has a seat now.
+15:39:08, Thread-7:	Customer 5 is eating sushi.
+15:39:08, Thread-8:	Customer 6 is now created.
+15:39:08, Thread-8:	Customer 6 has a seat now.
+15:39:08, Thread-8:	Customer 6 is eating sushi.
+15:39:08, Thread-9:	Customer 7 is now created.
+15:39:08, Thread-9:	Customer 7 has a seat now.
+15:39:08, Thread-9:	Customer 7 is eating sushi.
+15:39:08, Thread-10:	Customer 8 is now created.
+15:39:08, Thread-10:	Customer 8 has a seat now.
+15:39:08, Thread-10:	Customer 8 is eating sushi.
+15:39:08, Thread-11:	Customer 9 is now created.
+15:39:08, Thread-11:	Customer 9 has a seat now.
+15:39:08, Thread-11:	Customer 9 is eating sushi.
+15:39:08, Thread-12:	Customer 10 is now created.
+15:39:08, Thread-12:	Customer 10 has a seat now.
+15:39:08, Thread-12:	Customer 10 is eating sushi.
+15:39:08, Thread-13:	Customer 11 is now created.
+15:39:08, Thread-13:	Customer 11 is waiting for a free seat.
+15:39:08, Thread-14:	Customer 12 is now created.
+15:39:08, Thread-14:	Customer 12 is waiting for a free seat.
+15:39:08, Thread-15:	Customer 13 is now created.
+15:39:08, Thread-15:	Customer 13 is waiting for a free seat.
+15:39:08, Thread-16:	Customer 14 is now created.
+15:39:08, Thread-16:	Customer 14 is waiting for a free seat.
+15:39:09, Thread-17:	Customer 15 is now created.
+15:39:09, Thread-17:	Customer 15 is waiting for a free seat.
+15:39:09, Thread-18:	Customer 16 is now created.
+15:39:09, Thread-18:	Customer 16 is waiting for a free seat.
+15:39:09, Thread-19:	Customer 17 is now created.
+15:39:09, Thread-19:	Customer 17 is waiting for a free seat.
+15:39:09, Thread-20:	Customer 18 is now created.
+15:39:09, Thread-20:	Customer 18 is waiting for a free seat.
+15:39:09, Thread-21:	Customer 19 is now created.
+15:39:09, Thread-21:	Customer 19 is waiting for a free seat.
+15:39:09, Thread-22:	Customer 20 is now created.
+15:39:09, Thread-22:	Customer 20 is waiting for a free seat.
+15:39:09, Thread-23:	Customer 21 is now created.
+15:39:09, Thread-23:	Customer 21 is waiting for a free seat.
+15:39:09, Thread-24:	Customer 22 is now created.
+15:39:09, Thread-24:	Customer 22 is waiting for a free seat.
+15:39:09, Thread-25:	Customer 23 is now created.
+15:39:09, Thread-25:	Customer 23 is waiting for a free seat.
+15:39:09, Thread-26:	Customer 24 is now created.
+15:39:09, Thread-26:	Customer 24 is waiting for a free seat.
+15:39:10, Thread-27:	Customer 25 is now created.
+15:39:10, Thread-27:	Customer 25 is waiting for a free seat.
+15:39:10, Thread-28:	Customer 26 is now created.
+15:39:10, Thread-28:	Customer 26 is waiting for a free seat.
+15:39:10, Thread-29:	Customer 27 is now created.
+15:39:10, Thread-29:	Customer 27 is waiting for a free seat.
+15:39:10, Thread-30:	Customer 28 is now created.
+15:39:10, Thread-30:	Customer 28 is waiting for a free seat.
+15:39:10, Thread-31:	Customer 29 is now created.
+15:39:10, Thread-31:	Customer 29 is waiting for a free seat.
+15:39:14, Thread-8:	Customer 6 is done eating sushi.
+15:39:14, Now there is a free seat in the shop.
+15:39:14, Thread-12:	Customer 10 is done eating sushi.
+15:39:19, Thread-4:	Customer 2 is done eating sushi.
+15:39:22, Thread-5:	Customer 3 is done eating sushi.
+15:39:23, Thread-9:	Customer 7 is done eating sushi.
+15:39:26, Thread-7:	Customer 5 is done eating sushi.
+15:39:26, Thread-11:	Customer 9 is done eating sushi.
+15:39:31, Thread-2:	Customer 0 is done eating sushi.
+15:39:31, Thread-6:	Customer 4 is done eating sushi.
+15:39:35, Thread-10:	Customer 8 is done eating sushi.
+15:40:27, Thread-2:	Customer 0 is now created.
+15:40:27, Thread-2:	Customer 0 has a seat now.
+15:40:27, Thread-2:	Customer 0 is eating sushi.
+15:40:27, Thread-3:	Customer 1 is now created.
+15:40:27, Thread-3:	Customer 1 has a seat now.
+15:40:27, Thread-3:	Customer 1 is eating sushi.
+15:40:27, Thread-4:	Customer 2 is now created.
+15:40:27, Thread-4:	Customer 2 has a seat now.
+15:40:27, Thread-4:	Customer 2 is eating sushi.
+15:40:27, Thread-5:	Customer 3 is now created.
+15:40:27, Thread-5:	Customer 3 has a seat now.
+15:40:27, Thread-5:	Customer 3 is eating sushi.
+15:40:27, Thread-6:	Customer 4 is now created.
+15:40:27, Thread-6:	Customer 4 has a seat now.
+15:40:27, Thread-6:	Customer 4 is eating sushi.
+15:40:27, Thread-6:	Customer 4 is done eating sushi.
+15:40:27, Thread-7:	Customer 5 is now created.
+15:40:27, Thread-7:	Customer 5 has a seat now.
+15:40:27, Thread-7:	Customer 5 is eating sushi.
+15:40:27, Thread-8:	Customer 6 is now created.
+15:40:27, Thread-8:	Customer 6 has a seat now.
+15:40:27, Thread-8:	Customer 6 is eating sushi.
+15:40:27, Thread-8:	Customer 6 is done eating sushi.
+15:40:27, Thread-9:	Customer 7 is now created.
+15:40:27, Thread-9:	Customer 7 has a seat now.
+15:40:27, Thread-9:	Customer 7 is eating sushi.
+15:40:27, Thread-10:	Customer 8 is now created.
+15:40:27, Thread-10:	Customer 8 has a seat now.
+15:40:27, Thread-10:	Customer 8 is eating sushi.
+15:40:28, Thread-11:	Customer 9 is now created.
+15:40:28, Thread-11:	Customer 9 has a seat now.
+15:40:28, Thread-11:	Customer 9 is eating sushi.
+15:40:28, Thread-12:	Customer 10 is now created.
+15:40:28, Thread-12:	Customer 10 has a seat now.
+15:40:28, Thread-12:	Customer 10 is eating sushi.
+15:40:28, Thread-13:	Customer 11 is now created.
+15:40:28, Thread-13:	Customer 11 has a seat now.
+15:40:28, Thread-13:	Customer 11 is eating sushi.
+15:40:28, Thread-14:	Customer 12 is now created.
+15:40:28, Thread-14:	Customer 12 is waiting for a free seat.
+15:40:28, Thread-15:	Customer 13 is now created.
+15:40:28, Thread-15:	Customer 13 is waiting for a free seat.
+15:40:28, Thread-16:	Customer 14 is now created.
+15:40:28, Thread-16:	Customer 14 is waiting for a free seat.
+15:40:28, Thread-17:	Customer 15 is now created.
+15:40:28, Thread-17:	Customer 15 is waiting for a free seat.
+15:40:28, Thread-18:	Customer 16 is now created.
+15:40:28, Thread-18:	Customer 16 is waiting for a free seat.
+15:40:28, Thread-19:	Customer 17 is now created.
+15:40:28, Thread-19:	Customer 17 is waiting for a free seat.
+15:40:28, Thread-20:	Customer 18 is now created.
+15:40:28, Thread-20:	Customer 18 is waiting for a free seat.
+15:40:29, Thread-21:	Customer 19 is now created.
+15:40:29, Thread-21:	Customer 19 is waiting for a free seat.
+15:40:29, Thread-22:	Customer 20 is now created.
+15:40:29, Thread-22:	Customer 20 is waiting for a free seat.
+15:40:29, Thread-23:	Customer 21 is now created.
+15:40:29, Thread-23:	Customer 21 is waiting for a free seat.
+15:40:29, Thread-24:	Customer 22 is now created.
+15:40:29, Thread-24:	Customer 22 is waiting for a free seat.
+15:40:29, Thread-25:	Customer 23 is now created.
+15:40:29, Thread-25:	Customer 23 is waiting for a free seat.
+15:40:29, Thread-26:	Customer 24 is now created.
+15:40:29, Thread-26:	Customer 24 is waiting for a free seat.
+15:40:29, Thread-27:	Customer 25 is now created.
+15:40:29, Thread-27:	Customer 25 is waiting for a free seat.
+15:40:29, Thread-28:	Customer 26 is now created.
+15:40:29, Thread-28:	Customer 26 is waiting for a free seat.
+15:40:29, Thread-29:	Customer 27 is now created.
+15:40:29, Thread-29:	Customer 27 is waiting for a free seat.
+15:40:29, Thread-30:	Customer 28 is now created.
+15:40:29, Thread-30:	Customer 28 is waiting for a free seat.
+15:40:30, Thread-31:	Customer 29 is now created.
+15:40:30, Thread-31:	Customer 29 is waiting for a free seat.
+15:40:30, Thread-2:	Customer 0 is done eating sushi.
+15:40:30, Now there is a free seat in the shop.
+15:40:31, Thread-12:	Customer 10 is done eating sushi.
+15:40:33, Thread-9:	Customer 7 is done eating sushi.
+15:40:34, Thread-11:	Customer 9 is done eating sushi.
+15:40:34, Thread-13:	Customer 11 is done eating sushi.
+15:40:45, Thread-4:	Customer 2 is done eating sushi.
+15:40:45, Thread-10:	Customer 8 is done eating sushi.
+15:40:48, Thread-7:	Customer 5 is done eating sushi.
+15:40:51, Thread-3:	Customer 1 is done eating sushi.
+15:40:51, Thread-5:	Customer 3 is done eating sushi.
+15:45:35, Thread-2:	Customer 0 is now created.
+15:45:35, Thread-2:	Customer 0 has a seat now.
+15:45:35, Thread-2:	Customer 0 is eating sushi.
+15:45:35, Thread-3:	Customer 1 is now created.
+15:45:35, Thread-3:	Customer 1 has a seat now.
+15:45:35, Thread-3:	Customer 1 is eating sushi.
+15:45:35, Thread-4:	Customer 2 is now created.
+15:45:35, Thread-4:	Customer 2 has a seat now.
+15:45:35, Thread-4:	Customer 2 is eating sushi.
+15:45:35, Thread-5:	Customer 3 is now created.
+15:45:35, Thread-5:	Customer 3 has a seat now.
+15:45:35, Thread-5:	Customer 3 is eating sushi.
+15:45:35, Thread-6:	Customer 4 is now created.
+15:45:35, Thread-6:	Customer 4 has a seat now.
+15:45:35, Thread-6:	Customer 4 is eating sushi.
+15:45:35, Thread-7:	Customer 5 is now created.
+15:45:35, Thread-7:	Customer 5 has a seat now.
+15:45:35, Thread-7:	Customer 5 is eating sushi.
+15:45:35, Thread-8:	Customer 6 is now created.
+15:45:35, Thread-8:	Customer 6 has a seat now.
+15:45:35, Thread-8:	Customer 6 is eating sushi.
+15:45:35, Thread-9:	Customer 7 is now created.
+15:45:35, Thread-9:	Customer 7 has a seat now.
+15:45:35, Thread-9:	Customer 7 is eating sushi.
+15:45:35, Thread-10:	Customer 8 is now created.
+15:45:35, Thread-10:	Customer 8 has a seat now.
+15:45:35, Thread-10:	Customer 8 is eating sushi.
+15:45:35, Thread-10:	Customer 8 is done eating sushi.
+15:45:36, Thread-11:	Customer 9 is now created.
+15:45:36, Thread-11:	Customer 9 has a seat now.
+15:45:36, Thread-11:	Customer 9 is eating sushi.
+15:45:36, Thread-12:	Customer 10 is now created.
+15:45:36, Thread-12:	Customer 10 has a seat now.
+15:45:36, Thread-12:	Customer 10 is eating sushi.
+15:45:36, Thread-13:	Customer 11 is now created.
+15:45:36, Thread-13:	Customer 11 is waiting for a free seat.
+15:45:36, Thread-14:	Customer 12 is now created.
+15:45:36, Thread-14:	Customer 12 is waiting for a free seat.
+15:45:36, Thread-15:	Customer 13 is now created.
+15:45:36, Thread-15:	Customer 13 is waiting for a free seat.
+15:45:36, Thread-16:	Customer 14 is now created.
+15:45:36, Thread-16:	Customer 14 is waiting for a free seat.
+15:45:36, Thread-17:	Customer 15 is now created.
+15:45:36, Thread-17:	Customer 15 is waiting for a free seat.
+15:45:36, Thread-18:	Customer 16 is now created.
+15:45:36, Thread-18:	Customer 16 is waiting for a free seat.
+15:45:36, Thread-19:	Customer 17 is now created.
+15:45:36, Thread-19:	Customer 17 is waiting for a free seat.
+15:45:36, Thread-20:	Customer 18 is now created.
+15:45:36, Thread-20:	Customer 18 is waiting for a free seat.
+15:45:37, Thread-21:	Customer 19 is now created.
+15:45:37, Thread-21:	Customer 19 is waiting for a free seat.
+15:45:37, Thread-22:	Customer 20 is now created.
+15:45:37, Thread-22:	Customer 20 is waiting for a free seat.
+15:45:37, Thread-23:	Customer 21 is now created.
+15:45:37, Thread-23:	Customer 21 is waiting for a free seat.
+15:45:37, Thread-24:	Customer 22 is now created.
+15:45:37, Thread-24:	Customer 22 is waiting for a free seat.
+15:45:37, Thread-25:	Customer 23 is now created.
+15:45:37, Thread-25:	Customer 23 is waiting for a free seat.
+15:45:37, Thread-26:	Customer 24 is now created.
+15:45:37, Thread-26:	Customer 24 is waiting for a free seat.
+15:45:37, Thread-27:	Customer 25 is now created.
+15:45:37, Thread-27:	Customer 25 is waiting for a free seat.
+15:45:37, Thread-28:	Customer 26 is now created.
+15:45:37, Thread-28:	Customer 26 is waiting for a free seat.
+15:45:37, Thread-29:	Customer 27 is now created.
+15:45:37, Thread-29:	Customer 27 is waiting for a free seat.
+15:45:37, Thread-30:	Customer 28 is now created.
+15:45:37, Thread-30:	Customer 28 is waiting for a free seat.
+15:45:38, Thread-31:	Customer 29 is now created.
+15:45:38, Thread-31:	Customer 29 is waiting for a free seat.
+15:45:38, Thread-2:	Customer 0 is done eating sushi.
+15:45:38, Now there is a free seat in the shop.
+15:45:38, Thread-6:	Customer 4 is done eating sushi.
+15:45:42, Thread-11:	Customer 9 is done eating sushi.
+15:45:47, Thread-3:	Customer 1 is done eating sushi.
+15:45:50, Thread-7:	Customer 5 is done eating sushi.
+15:45:50, Thread-8:	Customer 6 is done eating sushi.
+15:45:53, Thread-5:	Customer 3 is done eating sushi.
+15:45:56, Thread-4:	Customer 2 is done eating sushi.
+15:45:56, Thread-9:	Customer 7 is done eating sushi.
+15:46:03, Thread-12:	Customer 10 is done eating sushi.
