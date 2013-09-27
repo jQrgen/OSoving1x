@@ -16,7 +16,7 @@ public class EatingArea {
     }
     
     public void addToEatingArea() {
-        while(SushiBar.isOpen){
+        while(true){
             synchronized(lock){
                 while(seats.size() == 10){ 
                     try {
@@ -26,6 +26,9 @@ public class EatingArea {
                     }
                 }
             seats.add(queue.removeFirst());
+            }
+            if(!SushiBar.isOpen){
+                break;
             }
         }
     }
