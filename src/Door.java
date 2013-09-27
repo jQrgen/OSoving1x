@@ -1,11 +1,3 @@
-
-
-
-
-/**
- *
- * @author ageward
- */
 public class Door implements Runnable{
     
     int counter = 0;
