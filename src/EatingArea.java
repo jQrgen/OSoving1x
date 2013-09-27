@@ -38,11 +38,15 @@ public class EatingArea {
                     SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
                     " has finished eating.");
             seats.remove(customer);
-            lock.notify();
-        }
+                if(SushiBar.isOpen){
+                    lock.notify();
+                }
+            }
+        
     }
     public void addQueue(int newID){
         queue.add(new Customer(newID,this));
     }
+    
     
 }
