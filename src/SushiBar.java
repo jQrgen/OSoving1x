@@ -29,11 +29,7 @@ public class SushiBar {
                 Door door = new Door();
 
 	}
-        public static void customerDone(Customer customer){
-            SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
-                    " has left the shop.");
-        }
-	
+        
 	//Writes actions in the log file and console
 	public static void write(String str){
 		try {
