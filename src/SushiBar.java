@@ -17,17 +17,20 @@ public class SushiBar {
 	public static boolean isOpen=true;
         
         
-        Clock clock = new Clock(duration);
         
 	//Creating the log file
 	private static File log;
 	private static String path = "./";
         
 	public static void main(String[] args) {
+                Clock clock = new Clock(duration);
 		log= new File(path + "log.txt"); 
                 
-                EatingArea ea = new EatingArea(door);
-
+                EatingArea ea = new EatingArea();
+                Door door = new Door(ea);
+                ea.addToEatingArea();
+                
+                
 	}
         
 	//Writes actions in the log file and console
