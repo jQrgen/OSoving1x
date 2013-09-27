@@ -34,13 +34,18 @@ public class Customer implements Runnable {
                     SushiBar.write(Thread.currentThread().getName()
                         + ":\tCustomer " + this.id + " is waiting for a free seat.");
                     sa.wait();
-                    sa.customerEnteringTheServingArea(this);
+                    if (SushiBar.isOpen){
+                        sa.customerEnteringTheServingArea(this);
+                    }
+                    
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
         }
+        if(SushiBar.isOpen){
         sa.customerEnteringTheServingArea(this);
+        
         try {
             SushiBar.write(Thread.currentThread().getName()
                 + ":\tCustomer " + this.id + " is eating sushi.");
@@ -51,6 +56,7 @@ public class Customer implements Runnable {
             e.printStackTrace();
         }
         sa.customerLeavingTheServingArea(this);
+        }
     }
     public int getId(){
         return this.id;

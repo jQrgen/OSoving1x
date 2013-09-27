@@ -34,6 +34,9 @@ public class ServingArea {
         if (SushiBar.isOpen) {
             notify();
         }
+        else{
+            notifyAll();
+        }
     }
 
     public synchronized boolean isThereAnyFreeSeats() {
