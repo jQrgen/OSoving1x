@@ -17,9 +17,11 @@ public class Door {
     LinkedList<Customer> queue = new LinkedList();
     public static boolean open = true;
     Timer timer;
+    private EatingArea ea;
     
-    public Door(){
+    public Door(EatingArea ea){
         newID = 0;
+        this.ea = ea;
         timer = new Timer();
         timer.schedule(new newCustomer(),SushiBar.doorWait);
     }
@@ -30,7 +32,7 @@ public class Door {
                    System.out.println("Shop is closed");
                    timer.cancel();
                }else{ 
-               queue.add(new Customer(newID));
+               queue.add(new Customer(newID, ea));
                newID++;
                timer.schedule(new newCustomer(),SushiBar.doorWait);  
                }
