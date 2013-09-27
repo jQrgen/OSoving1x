@@ -18,12 +18,12 @@ public class Customer extends Thread {
         this.id = id;
         this.nofOrders = (int)(Math.random()*10); 
         this.ea = ea;
-        SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
+        SushiBar.write(Thread.currentThread().getName()+": Customer "+this.id+ 
                     " is now created.");
     }
         
     public void run(){
-        SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
+        SushiBar.write(Thread.currentThread().getName()+": Customer "+this.id+ 
                     " is eating sushi.");
         try {
             Thread.sleep(nofOrders*SushiBar.customerWait);

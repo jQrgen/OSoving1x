@@ -27,12 +27,12 @@ public class EatingArea {
                         Logger.getLogger(EatingArea.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
-            seats.add(door.GetCustomerInFrontOfTheLine());
+            seats.add(door.getCustomerInFrontOfTheLine());
             }
         }
     }
     
-    public void CostumerLeft(Customer customer) {
+    public void costumerLeft(Customer customer) {
         synchronized(lock){
             seats.remove(customer);
         }
