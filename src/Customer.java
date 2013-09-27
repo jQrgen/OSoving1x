@@ -1,3 +1,4 @@
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -10,11 +11,13 @@
 public class Customer extends Thread {
     public int id;
     private int nofOrders;
+    private EatingArea ea;
         
 
-    public Customer(int id){
+    public Customer(int id, EatingArea ea){
         this.id = id;
         this.nofOrders = (int)(Math.random()*10); 
+        this.ea = ea;
         SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
                     " is now created.");
     }
@@ -26,6 +29,7 @@ public class Customer extends Thread {
             Thread.sleep(nofOrders*SushiBar.customerWait);
         } catch (InterruptedException e){
             e.printStackTrace();
-        } 
+        }
+        ea.customerLeft(this);
     }
 }
