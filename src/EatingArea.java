@@ -9,15 +9,13 @@ import java.util.logging.Logger;
 public class EatingArea {
     private LinkedList seats = new LinkedList();
     private final int capacity = 10;
-    Door door;
     private Object lock = new Object();
+    private LinkedList<Customer> queue = new LinkedList();
     
-    public EatingArea(Door door){
-    this.door = door;
-    
+    public EatingArea(){
     }
     
-    public void AddToEatingArea() {
+    public void addToEatingArea() {
         while(true){
             synchronized(lock){
                 while(seats.size() == 10){ 
@@ -39,6 +37,9 @@ public class EatingArea {
             seats.remove(customer);
             lock.notify();
         }
+    }
+    public void addQueue(int newID){
+        queue.add(new Customer(newID,this));
     }
     
 }
