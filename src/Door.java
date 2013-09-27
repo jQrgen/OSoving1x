@@ -14,8 +14,6 @@ import java.util.TimerTask;
  */
 public class Door {
     public int newID;
-    LinkedList<Customer> queue = new LinkedList();
-    public static boolean open = true;
     Timer timer;
     private EatingArea ea;
     
@@ -28,7 +26,7 @@ public class Door {
     
     class newCustomer extends TimerTask {
            public void run() {
-               if(!open){
+               if(!SushiBar.isOpen){
                    System.out.println("Shop is closed");
                    timer.cancel();
                }else{ 
