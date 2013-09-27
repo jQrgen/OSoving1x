@@ -31,7 +31,6 @@ public class SushiBar {
 	public static void main(String[] args) {
 
 		log= new File(path + "log.txt"); 
-
 		
 		ServingArea sa = new ServingArea(capacity);
                 Thread door = new Thread(new Door(sa));
