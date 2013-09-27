@@ -20,6 +20,10 @@ public class Customer extends Thread {
         this.ea = ea;
         SushiBar.write(Thread.currentThread().getName()+": Customer "+this.id+ 
                     " is now created.");
+        if(ea.seats.size() == 10){
+            SushiBar.write(Thread.currentThread().getName()+": Customer "+this.id+ 
+                    " is waiting for free seat");
+        }
     }
         
     public void run(){
