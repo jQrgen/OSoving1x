@@ -1,3 +1,12 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author ageward
+ */
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Timer;

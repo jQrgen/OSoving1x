@@ -1,3 +1,11 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+
+/**
+ *
+ * @author ageward
+ */
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -15,24 +23,24 @@ public class SushiBar {
 
 
 	public static boolean isOpen=true;
-        
-        
-        
+
 	//Creating the log file
 	private static File log;
 	private static String path = "./";
         
 	public static void main(String[] args) {
-                Clock clock = new Clock(duration);
+
 		log= new File(path + "log.txt"); 
-                
-                EatingArea ea = new EatingArea();
-                Door door = new Door(ea);
-                ea.addToEatingArea();
-                
-                
+
+		
+		ServingArea sa = new ServingArea(capacity);
+                Thread door = new Thread(new Door(sa));
+                Clock clock = new Clock(duration);
+                door.start();
 	}
+
         
+
 	//Writes actions in the log file and console
 	public static void write(String str){
 		try {
