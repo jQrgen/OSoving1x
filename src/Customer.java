@@ -2,24 +2,56 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+package asd;
+
+import sun.font.EAttribute;
 
 /**
  *
  * @author ageward
  */
-public class Customer extends Thread {
-    public int id;
-    private int nofOrders;
-        
-    public Customer(int id){
+public class Customer implements Runnable {
+
+    private int id;
+    private int orders;
+    private ServingArea sa;
+
+    public Customer(int id, ServingArea sa) {
         this.id = id;
-        this.nofOrders = (int)(Math.random()*10); 
+        this.sa = sa;
+        this.orders = (int) (Math.random() * SushiBar.maxOrder);
     }
-        
-    public void run(){
-        for ( int i = 0 ; i < nofOrders; i++){
-                
+
+    @Override
+    public void run() {
+        SushiBar.write(Thread.currentThread().getName()
+                + ":\tCustomer " + this.id + " is now created.");
+        if (!sa.isThereAnyFreeSeats()) {
+            synchronized (sa) {
+                try {
+                    SushiBar.write(Thread.currentThread().getName()
+                        + ":\tCustomer " + this.id + " is waiting for a free seat.");
+                    sa.wait();
+                    sa.customerEnteringTheServingArea(this);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-        
+        sa.customerEnteringTheServingArea(this);
+        try {
+            SushiBar.write(Thread.currentThread().getName()
+                + ":\tCustomer " + this.id + " is eating sushi.");
+            Thread.sleep(SushiBar.customerWait * orders);
+            SushiBar.write(Thread.currentThread().getName()
+                + ":\tCustomer " + this.id + " is done eating sushi.");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        sa.customerLeavingTheServingArea(this);
     }
+
+    public int getId() {
+        return id;
+    } 
 }
