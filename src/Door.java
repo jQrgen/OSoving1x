@@ -14,7 +14,7 @@ import java.util.TimerTask;
  */
 public class Door {
     public int newID;
-    LinkedList queue = new LinkedList();
+    LinkedList<Customer> queue = new LinkedList();
     public static boolean open = true;
     Timer timer;
     
@@ -35,5 +35,9 @@ public class Door {
                timer.schedule(new newCustomer(),SushiBar.doorWait);  
                }
            }
+    
+    }
+    public Customer getCustomerInFrontOfTheLine(){
+        return queue.removeFirst();
     }
 }
