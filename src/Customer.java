@@ -37,10 +37,12 @@ public class Customer implements Runnable {
                     e.printStackTrace();
                 }
             }
+        } else {
+            if (SushiBar.isOpen) {
+                sa.customerEnteringTheServingArea(this);
+            }
         }
         if (SushiBar.isOpen) {
-            sa.customerEnteringTheServingArea(this);
-
             try {
                 SushiBar.write(Thread.currentThread().getName()
                         + ":\tCustomer " + this.id + " is eating sushi.");
@@ -50,8 +52,8 @@ public class Customer implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            sa.customerLeavingTheServingArea(this);
         }
+        sa.customerLeavingTheServingArea(this);
     }
 
     public int getId() {
