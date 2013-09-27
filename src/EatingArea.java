@@ -25,7 +25,7 @@ public class EatingArea {
                         Logger.getLogger(EatingArea.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
-            seats.add(door.getCustomerInFrontOfTheLine());
+            seats.add(queue.removeFirst());
             }
         }
     }
@@ -35,11 +35,15 @@ public class EatingArea {
                     SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
                     " has finished eating.");
             seats.remove(customer);
-            lock.notify();
-        }
+                if(SushiBar.isOpen){
+                    lock.notify();
+                }
+            }
+        
     }
     public void addQueue(int newID){
         queue.add(new Customer(newID,this));
     }
+    
     
 }
