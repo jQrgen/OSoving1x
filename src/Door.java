@@ -32,14 +32,11 @@ public class Door {
                    System.out.println("Shop is closed");
                    timer.cancel();
                }else{ 
-               queue.add(new Customer(newID, ea));
+               ea.addQueue(newID);
                newID++;
                timer.schedule(new newCustomer(),SushiBar.doorWait);  
                }
            }
     
-    }
-    public Customer getCustomerInFrontOfTheLine(){
-        return queue.removeFirst();
     }
 }
