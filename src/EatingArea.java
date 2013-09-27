@@ -32,9 +32,12 @@ public class EatingArea {
         }
     }
     
-    public void costumerLeft(Customer customer) {
+    public void customerLeft(Customer customer) {
         synchronized(lock){
+                    SushiBar.write(Thread.currentThread().getName()+": Customer "+customer.id+ 
+                    " has finished eating.");
             seats.remove(customer);
+            lock.notify();
         }
     }
     
